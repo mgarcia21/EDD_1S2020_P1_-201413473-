@@ -6,10 +6,13 @@
 #include <conio.h>
 #include <string>
 #include "CaracterListaDoble.h"
+#include <fstream>
 using namespace std;
 
 int main()
 {
+
+
 
 	void Menu();
 	void Editor();
@@ -21,13 +24,28 @@ void Editor() {
 	string contenido;
 	std::cout << "Ingresar Texto \n";
 	getline(cin, contenido);
+	ofstream file;
+	file.open("C:\\Users\\SURFACE\\Documents\\EDD\\prueba.txt");
+	file << "digraph G { ";
 	for (int i = 0; i < contenido.length(); i++)
 	{
+		if (i==0 || i==contenido.length()-1)
+		{
+			file << "\"" << contenido[i] << "\"->\"";
+		}else{
+			file << contenido[i] << "\"->\"" << contenido[i - 1]<<"\"\n\"";
+			file << contenido[i] << "\"->\"";
+
+		}
+
 		std::cout << "se inserto a la liste" << contenido[i] << "\n";
 		listaCaracter->insertarInicio(contenido[i]);
 	}
+	file << "}";
+	file.close();
 	std::cout << "-----------------------\n";
 	listaCaracter->visualizar();
+
 
 }
 void Menu() {
