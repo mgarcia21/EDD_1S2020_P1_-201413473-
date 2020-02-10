@@ -1,2 +1,6 @@
 ﻿  EDD_1S2020_P1_-201413473-.cpp
+C:\Users\SURFACE\Documents\GitHub\EDD_1S2020_P1_-201413473-\EDD_1S2020_P1_-201413473-\EDD_1S2020_P1_-201413473-\CaracterListaDoble.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\SURFACE\Documents\GitHub\EDD_1S2020_P1_-201413473-\EDD_1S2020_P1_-201413473-\EDD_1S2020_P1_-201413473-\CaracterListaDoble.h(3,9): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\SURFACE\Documents\GitHub\EDD_1S2020_P1_-201413473-\EDD_1S2020_P1_-201413473-\EDD_1S2020_P1_-201413473-\CaracterListaDoble.h(45,7): warning C4101: 'c': variable local sin referencia
+C:\Users\SURFACE\Documents\GitHub\EDD_1S2020_P1_-201413473-\EDD_1S2020_P1_-201413473-\EDD_1S2020_P1_-201413473-\EDD_1S2020_P1_-201413473-.cpp(24,20): warning C4018: '<': no coinciden signed/unsigned
   EDD_1S2020_P1_-201413473-.vcxproj -> C:\Users\SURFACE\Documents\GitHub\EDD_1S2020_P1_-201413473-\EDD_1S2020_P1_-201413473-\Debug\EDD_1S2020_P1_-201413473-.exe

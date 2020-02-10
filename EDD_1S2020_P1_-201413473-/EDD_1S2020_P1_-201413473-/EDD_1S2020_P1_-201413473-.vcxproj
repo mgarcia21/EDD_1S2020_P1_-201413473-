@@ -147,7 +147,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CaracterListaDoble.cpp" />
     <ClCompile Include="EDD_1S2020_P1_-201413473-.cpp" />
+    <ClCompile Include="NodoCaracter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CaracterListaDoble.h" />
+    <ClInclude Include="NodoCaracter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

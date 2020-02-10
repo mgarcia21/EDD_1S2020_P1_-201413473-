@@ -2,27 +2,43 @@
 //
 
 #include <iostream>
-#include <complex.h>
+#include "complex.h"
 #include <conio.h>
+#include <string>
+#include "CaracterListaDoble.h"
 using namespace std;
+
 int main()
 {
+
 	void Menu();
-
-
-	Menu();
+	void Editor();
+	Editor();
 }
+void Editor() {
+	CaracterListaDoble* listaCaracter = new CaracterListaDoble();
 
+	string contenido;
+	std::cout << "Ingresar Texto \n";
+	getline(cin, contenido);
+	for (int i = 0; i < contenido.length(); i++)
+	{
+		std::cout << "se inserto a la liste" << contenido[i] << "\n";
+		listaCaracter->insertarInicio(contenido[i]);
+	}
+	std::cout << "-----------------------\n";
+	listaCaracter->visualizar();
 
+}
 void Menu() {
 	int opcion;
-
 	std::cout << "UNIVERSIDAD DE SAN CARLOS DE GUATEMALA\n";
 	std::cout << "FACULTAD DE INGENIERIA\n";
 	std::cout << "ESTRUCTURA DE DATO\n";
 	std::cout << "PRACTICA 1\n";
 	std::cout << "MAYNOR ROLANDO GARCIA CASTRO\n";
 	std::cout << "CARNET 201413473/ CUI 224351170101\n";
+	std::cout << "--------------------------------\n";
 
 	std::cout << "MENU\n";
 	std::cout << "Crear archivo\n";
@@ -33,7 +49,7 @@ void Menu() {
 	switch (opcion)
 	{
 	case 1:
-		std::cout << "Se eligio opcion 1";
+		Editor();
 		break;
 	case 2:
 		std::cout << "Se eligio opcion 2";
@@ -49,18 +65,7 @@ void Menu() {
 		Menu();
 		break;
 	}
-
-
-
-
 }
 
-// Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
-// Depurar programa: F5 o menú Depurar > Iniciar depuración
 
-// Sugerencias para primeros pasos: 1. Use la ventana del Explorador de soluciones para agregar y administrar archivos
-//   2. Use la ventana de Team Explorer para conectar con el control de código fuente
-//   3. Use la ventana de salida para ver la salida de compilación y otros mensajes
-//   4. Use la ventana Lista de errores para ver los errores
-//   5. Vaya a Proyecto > Agregar nuevo elemento para crear nuevos archivos de código, o a Proyecto > Agregar elemento existente para agregar archivos de código existentes al proyecto
-//   6. En el futuro, para volver a abrir este proyecto, vaya a Archivo > Abrir > Proyecto y seleccione el archivo .sln
+
