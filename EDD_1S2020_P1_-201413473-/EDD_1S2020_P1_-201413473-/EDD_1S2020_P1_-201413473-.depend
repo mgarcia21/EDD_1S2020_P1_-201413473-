@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1581833498 source:/home/maynor/EDD_1S2020_P1_-201413473-/EDD_1S2020_P1_-201413473-/EDD_1S2020_P1_-201413473-/CaracterListaDoble.cpp
+
+1581831197 source:/home/maynor/EDD_1S2020_P1_-201413473-/EDD_1S2020_P1_-201413473-/EDD_1S2020_P1_-201413473-/NodoCaracter.cpp
+	"NodoCaracter.h"
+
+1581833808 /home/maynor/EDD_1S2020_P1_-201413473-/EDD_1S2020_P1_-201413473-/EDD_1S2020_P1_-201413473-/NodoCaracter.h
+	<complex.h>
+
+1582010114 source:/home/maynor/EDD_1S2020_P1_-201413473-/EDD_1S2020_P1_-201413473-/EDD_1S2020_P1_-201413473-/EDD_1S2020_P1_-201413473-.cpp
+	<iostream>
+	<complex.h>
+	<string>
+	"CaracterListaDoble.h"
+	<fstream>
+	<ncurses.h>
+
+1581995846 /home/maynor/EDD_1S2020_P1_-201413473-/EDD_1S2020_P1_-201413473-/EDD_1S2020_P1_-201413473-/CaracterListaDoble.h
+	<iostream>
+	"complex.h"
+	"NodoCaracter.h"
+

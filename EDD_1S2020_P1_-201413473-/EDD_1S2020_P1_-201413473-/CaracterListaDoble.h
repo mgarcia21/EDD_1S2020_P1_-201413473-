@@ -1,6 +1,5 @@
 #include <iostream>
-#include "complex.h" ;
-#include<conio.h>;
+#include "complex.h"
 #include "NodoCaracter.h"
 using namespace std;
 #pragma once

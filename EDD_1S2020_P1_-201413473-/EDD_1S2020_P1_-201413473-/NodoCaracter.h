@@ -1,6 +1,5 @@
 #pragma once
 #include <complex.h>
-#include <conio.h>
 
 #ifndef _NODOH_
 #define _NODOH_
