@@ -23,15 +23,18 @@ int main()
 void Editor() {
 	CaracterListaDoble* listaCaracter = new CaracterListaDoble();
 	initscr();
+	keypad(stdscr, TRUE);
 	int c;
 	char i;
         printw("");
 	while((c=getch())!=27){
-	if((c=getch())== 0407){
-        printw("presionaste la a    ");
-	}
+	if(c == KEY_BACKSPACE){
+        listaCaracter->eliminar('a');
+        delch();
+	}else{
  	listaCaracter->insertarInicio(c);
     refresh();
+    }
 	}
     listaCaracter->visualizar();
     getch();

@@ -14,6 +14,7 @@ public:
 	void insertarInicio(char a);
 	void insertarDespues(char a, NodoCaracter* anterior);
 	void visualizar();
+	void eliminar(char a);
 
 };
 
@@ -48,5 +49,31 @@ void CaracterListaDoble::visualizar() {
 		n = n->adelanteNodo();
 	}
 	std::cout << "----------------------------\n";
+}
+void CaracterListaDoble::eliminar(char a){
+    NodoCaracter* actual;
+    bool encontrado = false;
+
+    actual = cabeza;
+    while((actual != NULL) && (!encontrado)){ //while de busqueda
+    encontrado = (actual -> datoNodo() == a);
+    if(!encontrado){
+        actual = actual -> adelanteNodo();
+        }
+    }
+    //ENlace de nodo anterior con el siguiente
+    if(actual != NULL){
+        if(actual == cabeza){
+            cabeza = actual ->adelanteNodo();
+            if(actual ->adelanteNodo() != NULL){
+                actual ->adelanteNodo() ->ponerAtras(NULL);
+            }
+        }else if(actual->adelanteNodo() != NULL){
+            actual ->atrasNodo()->ponerAdelante(actual->adelanteNodo());
+            actual ->adelanteNodo()->ponerAtras(actual->atrasNodo());
+        }else
+            actual->atrasNodo()->ponerAdelante(NULL);
+    }
+
 }
 
